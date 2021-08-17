@@ -1,0 +1,12 @@
+@import "custom_bootstrap";
+@import "custom";
+
+:root {
+  --font-reg: 1.4rem;
+  --font-sm: 1rem;
+  --font-lg: 1.6rem;
+}
+
+body {
+  background-color: var(--bs-warning);
+}
