@@ -2,6 +2,8 @@
 @import "custom";
 @import "abstracts/css-variables";
 @import "abstracts/sass-variables";
+@import "base/animations";
+@import "components/button";
 
 body {
   background-color: var(--bs-warning);

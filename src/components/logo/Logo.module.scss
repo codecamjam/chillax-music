@@ -13,12 +13,12 @@
   padding-bottom: 1px;
 
   svg {
-    fill: var(--nav-text);
+    fill: var(--text);
     transform: translateX(-0.4rem);
   }
 
   &:hover {
-    border-bottom: 2px solid var(--nav-text);
+    border-bottom: 2px solid var(--text);
   }
 }
 
