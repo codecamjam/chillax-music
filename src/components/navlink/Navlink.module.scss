@@ -1,0 +1,45 @@
+@import "../../scss/abstracts/sass-variables";
+
+.navlink {
+  display: flex;
+  flex: 1 1 auto;
+  text-transform: capitalize;
+  font-size: var(--font-lg);
+  justify-content: flex-start;
+  align-items: center;
+
+  svg {
+    margin-right: 1rem;
+  }
+
+  span {
+    display: inline-block;
+    line-height: 0;
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    font-size: var(--font-reg);
+
+    svg {
+      width: var(--font-lg);
+      height: var(--font-lg);
+      margin-right: 0rem;
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (min-width: $bp-lg) {
+    font-size: var(--font-lg);
+
+    span {
+      margin-right: 1rem;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+      opacity: 1;
+      width: var(--font-xl);
+      height: var(--font-xl);
+    }
+  }
+}

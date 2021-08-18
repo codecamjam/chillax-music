@@ -1,3 +1,8 @@
 .header-navbar {
-  font-size: var(--font-reg);
+  font-size: var(--font-sm);
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+
+  // @media only screen and (min-width: $bp-sm)
 }

@@ -1,0 +1,61 @@
+@import "../../scss/abstracts/sass-variables";
+
+.icon {
+  fill: rgba(0, 0, 0, 0.7);
+  width: var(--font-xl);
+  height: var(--font-xl);
+  cursor: pointer;
+
+  &--home {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  &--headphones {
+  }
+  &--music {
+  }
+  &--video-camera {
+  }
+  &--podcast {
+  }
+  &--mic {
+  }
+  &--phone {
+  }
+  &--address-book {
+    width: 1.8rem !important;
+  }
+  &--envelop {
+  }
+  &--calendar {
+  }
+  &--tv {
+  }
+  &--equalizer {
+    width: 1.7rem !important;
+  }
+  &--eye {
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translate(1rem, -0.1rem);
+  }
+  &--star-empty {
+  }
+  &--man {
+    width: 2rem !important;
+    height: 2rem !important;
+    transform: translateX(0.1rem);
+  }
+  &--facebook {
+  }
+  &--instagram {
+  }
+  &--twitter {
+  }
+
+  &--appleinc {
+  }
+  &--soundcloud {
+  }
+}

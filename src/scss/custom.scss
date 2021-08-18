@@ -7,3 +7,29 @@
 .dropdown-menu {
   background-color: var(--bg-secondary);
 }
+
+.navbar-toggler {
+  font-size: 1.2rem;
+}
+
+.nav-link svg {
+  fill: rgba(0, 0, 0, 0.55) !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link svg {
+  fill: rgba(0, 0, 0, 0.55) !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active svg {
+  fill: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  svg {
+    fill: rgba(0, 0, 0, 0.9) !important;
+  }
+}
