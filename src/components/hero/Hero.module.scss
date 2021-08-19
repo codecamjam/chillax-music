@@ -1,22 +1,35 @@
 @import "../../scss/base/animations";
 @import "../../scss/abstracts/sass-variables";
 
-.mission {
-  margin: 9rem auto;
+.hero {
+  margin: 4.5rem auto 6rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  z-index: 20;
+
+  @media only screen and (min-width: $bp-sm) {
+    margin: 3rem auto 6rem auto;
+  }
+
+  @media only screen and (min-width: $bp-md) {
+    margin: 12rem auto;
+  }
 }
 
-.heading-primary {
+.heading {
   color: var(--text-light);
 
   /* do this to fix the shaky animation issue */
   backface-visibility: hidden;
   margin-bottom: 4rem;
 
-  &--main {
+  @media only screen and (max-width: $bp-md) {
+    margin-bottom: 2rem;
+  }
+
+  &Main {
     backface-visibility: hidden;
     text-transform: uppercase;
     display: block;
@@ -24,12 +37,13 @@
     font-weight: 400;
     letter-spacing: 1.4rem;
     margin-bottom: 1.5rem;
-    animation: moveInLeft 1.5s ease-out;
+    // animation: moveInLeft 1.5s ease-out;
     text-shadow: 1px 3px 3px rgba(var(--text), 0.7);
 
     @media only screen and (max-width: $bp-md) {
-      letter-spacing: 0.8rem;
+      letter-spacing: 0.7rem;
       font-size: 2.5rem;
+      font-weight: 600;
       animation: none;
       display: flex;
     }
@@ -39,17 +53,19 @@
     }
   }
 
-  &--sub {
+  &Sub {
     display: block;
     font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
-    animation: moveInRight 1.5s ease-out;
+    // animation: moveInRight 1.5s ease-out;
     backface-visibility: hidden;
 
     @media only screen and (max-width: $bp-md) {
       letter-spacing: 0rem;
-      font-size: var(--font-reg);
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 700;
       white-space: nowrap;
       animation: none;
     }

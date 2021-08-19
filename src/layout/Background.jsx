@@ -3,7 +3,7 @@ import video2 from "../assets/beach.webm";
 import { Container } from "react-bootstrap";
 import "./Background.scss";
 
-const Background = () => {
+const Background = ({ children }) => {
   return (
     <Container fluid={true} className="p-0 m-0">
       <div className="bg-video">
@@ -13,7 +13,7 @@ const Background = () => {
         </video>
       </div>
 
-      {/* <MissionStatement /> */}
+      {children}
     </Container>
   );
 };

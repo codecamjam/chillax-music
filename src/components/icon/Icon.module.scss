@@ -6,6 +6,10 @@
   height: var(--font-xl);
   cursor: pointer;
 
+  &--light {
+    fill: white;
+  }
+
   &--home {
     transform: translateX(-0.2rem);
   }

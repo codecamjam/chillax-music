@@ -1,0 +1,54 @@
+.card {
+  position: relative;
+  padding: 5rem;
+  margin: 1rem;
+  color: white;
+  font-weight: 300;
+  font-size: var(--font-xl);
+  background-color: var(--text-light);
+  box-shadow: 5rem 7rem 4rem rgba(#000, 0.4);
+  border-radius: 0.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 20rem;
+  grid-column-gap: 2rem;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text {
+  padding: 2rem 2rem 0 0;
+  border-right: 1px solid white;
+  grid-column: 1 / 2;
+}
+
+.image {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  grid-column: 2 / -1;
+  justify-self: center;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bs-primary) 90%,
+    var(--bs-secondary),
+    100%
+  );
+}

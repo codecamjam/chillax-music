@@ -8,15 +8,17 @@ import "./Main.scss";
 
 const Main = () => {
   return (
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" exact component={About} />
-      <Route path="/services" exact component={Services} />
-      <Route path="/contact" exact component={Contact} />
-      <Route path="*">
-        <Redirect to={"/"} />
-      </Route>
-    </Switch>
+    <div className="main">
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/services" exact component={Services} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="*">
+          <Redirect to={"/"} />
+        </Route>
+      </Switch>
+    </div>
   );
 };
 

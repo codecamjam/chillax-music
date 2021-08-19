@@ -8,6 +8,10 @@
   width: 5.5rem;
   padding: 1rem 0;
 
+  svg {
+    margin: 0.5rem 0;
+  }
+
   @media only screen and (min-width: $bp-md) {
     width: 16.8rem;
     flex-direction: row;

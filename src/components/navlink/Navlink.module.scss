@@ -23,6 +23,7 @@
     font-size: var(--font-reg);
     justify-content: center;
     align-items: center;
+    margin: 0.4rem 0;
 
     svg {
       display: none;
@@ -31,6 +32,7 @@
 
   @media only screen and (min-width: $bp-xl) {
     font-size: var(--font-lg);
+    margin: 0rem 0;
 
     span {
       margin-right: 1rem;

@@ -1,22 +1,28 @@
-import video1 from "../../assets/beach.mp4";
-import video2 from "../../assets/beach.webm";
-import { Container } from "react-bootstrap";
-import "./Hero.scss";
+import { useState, useEffect } from "react";
+
+import { Link } from "react-router-dom";
+import css from "./Hero.module.scss";
 
 const Hero = () => {
-  return (
-    <section className="hero">
-      <Container fluid={true} className="p-0 m-0">
-        <div className="bg-video">
-          <video className="bg-video__content" playsInline autoPlay loop muted>
-            <source src={video1} type="video/mp4" />
-            <source src={video2} type="video/webm" />
-          </video>
-        </div>
+  const [animate, setAnimate] = useState(true);
 
-        {/* <MissionStatement /> */}
-      </Container>
-    </section>
+  useEffect(() => {
+    setAnimate(false);
+  }, [animate]);
+
+  return (
+    <div className={css.hero}>
+      <h1 className={css.heading}>
+        <span className={css.headingMain}>chillax music</span>
+        <span className={css.headingSub}>
+          Audio, Video, & Streaming Solutions
+        </span>
+      </h1>
+
+      <Link to={"/services"} className="btn btn--hero btn--animated">
+        Learn more
+      </Link>
+    </div>
   );
 };
 
