@@ -2,7 +2,7 @@ import Hero from "../components/hero/Hero";
 
 import "./Home.scss";
 const Home = () => {
-  return <Hero />;
+  return <div></div>;
 };
 
 export default Home;

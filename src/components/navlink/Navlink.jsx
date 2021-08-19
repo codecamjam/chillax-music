@@ -9,7 +9,7 @@ const Navlink = ({ text, icon, route }) => {
       <Nav.Link>
         <span className={css.navlink}>
           <Icon spriteName={icon} />
-          <span>{text}</span>
+          <span className={css[text]}>{text}</span>
         </span>
       </Nav.Link>
     </LinkContainer>

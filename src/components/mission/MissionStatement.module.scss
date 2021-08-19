@@ -2,10 +2,10 @@
 @import "../../scss/abstracts/sass-variables";
 
 .mission {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 9rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -17,6 +17,7 @@
   margin-bottom: 4rem;
 
   &--main {
+    backface-visibility: hidden;
     text-transform: uppercase;
     display: block;
     font-size: 4rem;
@@ -30,10 +31,11 @@
       letter-spacing: 0.8rem;
       font-size: 2.5rem;
       animation: none;
+      display: flex;
     }
 
     @media only screen and (max-width: $bp-sm) {
-      opacity: 0;
+      font-size: 2rem;
     }
   }
 
@@ -43,6 +45,7 @@
     font-weight: 400;
     letter-spacing: 0.5rem;
     animation: moveInRight 1.5s ease-out;
+    backface-visibility: hidden;
 
     @media only screen and (max-width: $bp-md) {
       letter-spacing: 0rem;

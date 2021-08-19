@@ -5,9 +5,10 @@ import css from "./Logo.module.scss";
 const Logo = () => {
   return (
     <div className={css.logo}>
-      <LinkContainer to="/" className={css.link}>
+      <LinkContainer to="/">
         <Navbar.Brand className={css.content}>
-          <span className={css.text}>chillax</span>
+          <span className={css.chillax}>chillax</span>
+          <span className={css.cb}>cb</span>
           <Icon spriteName="icon-headphones" />
         </Navbar.Brand>
       </LinkContainer>

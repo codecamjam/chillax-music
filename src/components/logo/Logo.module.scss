@@ -1,33 +1,47 @@
-.link {
-  display: block;
-}
+@import "../../scss/abstracts/sass-variables";
 
 .content {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  width: 16.8rem;
+  width: 5.5rem;
+  padding: 1rem 0;
 
-  transition: all 0.2s ease-in;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 1px;
+  @media only screen and (min-width: $bp-md) {
+    width: 16.8rem;
+    flex-direction: row;
+    transform: translateX(0);
 
-  svg {
-    fill: var(--text);
-    transform: translateX(-0.4rem);
-  }
-
-  &:hover {
-    border-bottom: 2px solid var(--text);
+    svg {
+      transform: translateX(-0.4rem);
+    }
   }
 }
 
-.text {
-  display: block;
+.chillax {
+  display: none;
   font-size: 2.2rem;
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: 0.7rem;
   line-height: 0;
   font-weight: 500;
+
+  @media only screen and (min-width: $bp-md) {
+    display: block;
+  }
+}
+
+.cb {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  line-height: 0;
+  font-weight: 700;
+
+  @media only screen and (min-width: $bp-md) {
+    display: none;
+  }
 }

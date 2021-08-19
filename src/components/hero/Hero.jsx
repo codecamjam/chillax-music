@@ -1,7 +1,6 @@
 import video1 from "../../assets/beach.mp4";
 import video2 from "../../assets/beach.webm";
 import { Container } from "react-bootstrap";
-import MissionStatement from "../mission/MissionStatement";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -14,7 +13,8 @@ const Hero = () => {
             <source src={video2} type="video/webm" />
           </video>
         </div>
-        <MissionStatement />
+
+        {/* <MissionStatement /> */}
       </Container>
     </section>
   );
