@@ -11,3 +11,10 @@ body {
 .resize-animation-stopper * {
   transition: none !important;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: calc(var(--app-height) - 0rem);
+  justify-content: space-between;
+}

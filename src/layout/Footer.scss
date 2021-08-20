@@ -1,5 +1,31 @@
 .footer {
-  background-color: var(--text-light);
-  // height: 5rem;
+  background-color: rgba(#000, 0.9);
+  height: 6rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+
+  a {
+    display: flex;
+    align-items: stretch;
+  }
+
+  svg {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    fill: rgba(#fff, 0.8);
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+
+    align-items: center;
+    width: 22rem;
+    padding: 0rem 1rem;
+  }
 }

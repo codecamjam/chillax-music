@@ -56,12 +56,21 @@
   &--facebook {
   }
   &--instagram {
+    width: 3rem !important;
+    height: 3rem !important;
   }
   &--twitter {
   }
 
   &--appleinc {
+    width: 3rem !important;
+    height: 3rem !important;
   }
   &--soundcloud {
+  }
+
+  &--youtube {
+    width: 5rem !important;
+    height: 5rem !important;
   }
 }

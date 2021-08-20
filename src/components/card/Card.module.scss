@@ -25,6 +25,11 @@
 
   @media only screen and (min-width: 103.12375em) {
     margin: 1rem auto;
+    box-shadow: 2.5rem 2.3rem 1rem rgba(0, 0, 0, 0.4);
+  }
+
+  @media only screen and (min-width: 110em) {
+    max-width: 33rem;
   }
 
   svg {
