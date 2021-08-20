@@ -20,8 +20,10 @@ const Card = ({ title, icon, list, text, img }) => {
         </ul>
         <div className={[css.img, css[`img--${img}`]].join(" ")} />
       </div>
-      <blockquote className={css.footer}>&ldquo;{text}&rdquo;</blockquote>
-      <Stars />
+      <div className={css.footer}>
+        <blockquote className={css.quote}>&ldquo;{text}&rdquo;</blockquote>
+        <Stars />
+      </div>
     </div>
   );
 };
