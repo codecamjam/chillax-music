@@ -1,15 +1,16 @@
 import React from "react";
 import Card from "../../components/card/Card";
-import css from "./Audio.module.scss";
-import guitar from "../../assets/img/guitar.jpg";
+// import css from "./Audio.module.scss";
 
 const Audio = () => {
   const list = [
     "Mixing & Mastering",
     "Live Entertainment",
-    "House of Worship",
     "Books on Tape",
+    "Signal Flow",
   ];
+
+  const text = "Providing high quality sound";
 
   return (
     <section>
@@ -17,7 +18,8 @@ const Audio = () => {
         title="Audio"
         icon="icon-mic"
         list={list}
-        img={guitar}
+        text={text}
+        img="guitar"
         alt="Recording Studio"
       >
         filler

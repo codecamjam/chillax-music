@@ -1,10 +1,16 @@
 import React from "react";
 import CardItem from "../../components/card/Card";
-import css from "./Streaming.module.scss";
-import worship from "../../assets/img/worship.jpg";
+// import css from "./Streaming.module.scss";
 
 const Streaming = () => {
-  const list = ["Live Events", "Services", "Podcasts", "Radio"];
+  const list = [
+    "Business Conferences",
+    "House of Worship",
+    "Podcasts & radio",
+    "Performing Arts",
+  ];
+
+  const text = "Reliable streaming, affordable pricing";
 
   return (
     <section>
@@ -12,8 +18,8 @@ const Streaming = () => {
         title="Stream"
         icon="icon-podcast"
         list={list}
-        img={worship}
-        alt="Clay streaming church service"
+        text={text}
+        img="wideLens"
       >
         filler
       </CardItem>

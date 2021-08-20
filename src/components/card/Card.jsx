@@ -1,13 +1,16 @@
 import Icon from "../icon/Icon";
-
+import Stars from "../stars/Stars";
 import css from "./Card.module.scss";
 
-const Card = ({ title, icon, list, img, alt }) => {
+const Card = ({ title, icon, list, text, img }) => {
   return (
     <div className={css.card}>
-      <Icon spriteName={icon} />
-      <h3 className={css.title}>{title}</h3>
-      <div className={css.cardBody}>
+      <div className={css.header}>
+        <Icon spriteName={icon} />
+        <h3 className={css.title}>{title}</h3>
+      </div>
+
+      <div className={css.body}>
         <ul className={css.list}>
           {list.map((item, idx) => (
             <li key={idx} className={css.listItem}>
@@ -15,10 +18,10 @@ const Card = ({ title, icon, list, img, alt }) => {
             </li>
           ))}
         </ul>
-        <div className={css.imgContainer}>
-          <img className={css.img} src={img} alt={alt} />
-        </div>
+        <div className={[css.img, css[`img--${img}`]].join(" ")} />
       </div>
+      <blockquote className={css.footer}>&ldquo;{text}&rdquo;</blockquote>
+      <Stars />
     </div>
   );
 };

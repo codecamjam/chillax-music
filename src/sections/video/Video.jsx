@@ -1,24 +1,25 @@
 import React from "react";
 import CardItem from "../../components/card/Card";
-import css from "./Video.module.scss";
-import photography from "../../assets/img/photography.jpg";
+// import css from "./Video.module.scss";
 
 const Video = () => {
   const list = [
-    "Conferences & Seminars",
     "News & Broadcasting",
-    "Nature/Outdoors",
+    "Meetings & Seminars",
+    "Nature / Outdoors",
     "Performing Arts",
   ];
+
+  const text = "Gizmos to capture the magic";
 
   return (
     <section>
       <CardItem
         title="Video"
-        icon="icon-video-camera"
+        icon="icon-tv"
         list={list}
-        img={photography}
-        alt="Clay streaming church service"
+        text={text}
+        img="photography"
       >
         filler
       </CardItem>
