@@ -23,7 +23,6 @@ const Header = () => {
                 text="contact"
                 icon="icon-address-book"
               />
-              <Navlink route="/about" text="about" icon="icon-man" />
             </Nav>
           </Navbar.Collapse>
         </Container>

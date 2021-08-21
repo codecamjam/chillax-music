@@ -56,8 +56,9 @@
   &--facebook {
   }
   &--instagram {
-    // width: 3rem !important;
-    // height: 3rem !important;
+    @media only screen and (min-width: $bp-sm) {
+      width: 2.1rem !important;
+    }
   }
   &--twitter {
   }
@@ -70,10 +71,20 @@
   &--soundcloud {
     width: 2.4rem !important;
     height: 2.4rem !important;
-    transform: translateY(-0.5rem);
+    transform: translate(0.15rem, -0.5rem);
+
+    @media only screen and (min-width: $bp-sm) {
+      width: 3rem !important;
+      height: 2.8rem !important;
+      transform: translate(0.15rem, -0.3rem);
+    }
   }
 
   &--youtube {
     width: 3rem !important;
+
+    @media only screen and (min-width: $bp-sm) {
+      width: 3.3rem !important;
+    }
   }
 }

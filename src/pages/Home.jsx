@@ -1,13 +1,13 @@
 import Hero from "../components/hero/Hero";
-import Overview from "../sections/overview/Overview";
+import Links from "../components/heroLinks/HeroLinks";
 
 import "./Home.scss";
 const Home = () => {
   return (
-    <>
+    <div className="home">
       <Hero />
-      {/* <Overview /> */}
-    </>
+      <Links />
+    </div>
   );
 };
 

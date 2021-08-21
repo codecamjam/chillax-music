@@ -16,7 +16,7 @@ body {
   // display: flex;
   // flex-direction: column;
 
-  height: 100vh;
+  height: calc(var(--app-height) - 0rem);
   display: grid;
   grid-template-rows: min-content minmax(min-content, 1fr);
   align-content: space-between;

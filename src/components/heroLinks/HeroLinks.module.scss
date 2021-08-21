@@ -1,0 +1,42 @@
+@import "../../scss/abstracts/sass-variables";
+
+.hero {
+  padding: 0.3rem;
+
+  @media only screen and (min-width: $bp-lg) {
+    margin-left: auto;
+  }
+
+  &__links {
+    display: flex;
+    align-items: stretch;
+
+    svg {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: rgba(#000, 0.7);
+
+      @media only screen and (min-width: $bp-sm) {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+    width: 11rem;
+
+    @media only screen and (min-width: $bp-sm) {
+      width: 13rem;
+    }
+  }
+
+  @media only screen and (max-height: 23.43625em) {
+    display: none;
+  }
+}
