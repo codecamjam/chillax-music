@@ -10,7 +10,7 @@
   color: rgba(#fff, 0.7);
   display: flex;
   flex-direction: column;
-  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0.1rem 0.3rem 0.4rem rgba(0, 0, 0, 0.7);
 
   @media only screen and (min-width: $bp-md) {
     box-shadow: 1.8rem 1.7rem 1rem rgba(0, 0, 0, 0.4);
@@ -28,7 +28,7 @@
   }
 
   @media only screen and (min-width: 103.12375em) {
-    margin: 3rem auto;
+    margin: 4.5rem auto 3rem auto;
     box-shadow: 2.5rem 2.3rem 1rem rgba(0, 0, 0, 0.4);
   }
 
@@ -109,14 +109,15 @@
 .img {
   display: block;
   border-radius: 50%;
-  border: 3px solid rgba(#fff, 0.4);
+
   height: 16rem;
   width: 16rem;
-  overflow: hidden;
+  overflow: visible;
   align-self: center;
   background-size: cover;
   transform: translateY(-0.3rem);
   border: 1px solid rgba(#000, 0.8);
+  -webkit-filter: drop-shadow(0.3rem 0.4rem 0.2rem #000);
   filter: drop-shadow(0.3rem 0.4rem 0.2rem #000);
   position: relative;
   z-index: 1;
@@ -136,7 +137,6 @@
   &--photography {
     background-image: url(../../assets/img/photography.jpg);
     background-position: center 99%;
-    transform: translateY(180deg);
     opacity: 0.35;
   }
 
