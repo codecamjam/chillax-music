@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+  z-index: 100;
 
   &__row {
     margin: 0 0.4rem !important;

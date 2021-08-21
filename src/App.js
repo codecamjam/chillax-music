@@ -16,6 +16,7 @@ const App = () => {
   return (
     <div className="app">
       <Background />
+
       <Header />
       <Main />
     </div>
