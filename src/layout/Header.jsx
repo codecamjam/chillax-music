@@ -6,7 +6,7 @@ import Navlink from "../components/navlink/Navlink";
 const Header = () => {
   return (
     <header className="header-navbar">
-      <Navbar bg="dark" expand="md">
+      <Navbar bg="dark" expand="md" className="py-0">
         <Container fluid={true}>
           <Logo />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

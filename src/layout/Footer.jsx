@@ -1,11 +1,11 @@
 import Icon from "../components/icon/Icon";
 
-import "./Footer.scss";
+import css from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__logos">
+    <footer className={css.footer}>
+      <div className={css.footer__logos}>
         <a href="#">
           <Icon spriteName="icon-instagram" />
         </a>
@@ -21,6 +21,7 @@ const Footer = () => {
           <Icon spriteName="icon-appleinc" />
         </a>
       </div>
+      <p className={css.footer__copyright}>&copy; Chillax Music Group</p>
     </footer>
   );
 };

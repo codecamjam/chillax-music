@@ -2,20 +2,12 @@
 @import "../../scss/abstracts/sass-variables";
 
 .hero {
-  margin: 4.5rem auto 6rem auto;
+  margin: 0 auto 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   z-index: 20;
-
-  @media only screen and (min-width: $bp-sm) {
-    margin: 3rem auto 6rem auto;
-  }
-
-  @media only screen and (min-width: $bp-md) {
-    margin: 12rem auto;
-  }
 }
 
 .heading {
@@ -35,10 +27,15 @@
     display: block;
     font-size: 4rem;
     font-weight: 400;
-    letter-spacing: 1.4rem;
+    letter-spacing: 1.2rem;
     margin-bottom: 1.5rem;
     // animation: moveInLeft 1.5s ease-out;
     text-shadow: 1px 3px 3px rgba(var(--text), 0.7);
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 3rem;
+      letter-spacing: 1rem;
+    }
 
     @media only screen and (max-width: $bp-md) {
       letter-spacing: 0.7rem;
@@ -57,13 +54,29 @@
     display: block;
     font-size: 1.8rem;
     font-weight: 400;
-    letter-spacing: 0.5rem;
-    // animation: moveInRight 1.5s ease-out;
     backface-visibility: hidden;
 
-    @media only screen and (max-width: $bp-md) {
-      letter-spacing: 0rem;
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 1.4rem;
+      white-space: nowrap;
+      font-style: italic;
+      font-weight: 700;
+      animation: none;
+      letter-spacing: 0.1rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      letter-spacing: 0.1rem;
       font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 700;
+      white-space: nowrap;
+      animation: none;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      letter-spacing: 0;
+      font-size: 1rem;
       font-style: italic;
       font-weight: 700;
       white-space: nowrap;

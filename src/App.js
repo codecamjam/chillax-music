@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Header from "./layout/Header";
 import Main from "./layout/Main";
-import Footer from "./layout/Footer";
+
 import Background from "./layout/Background";
 import { getAppHeight } from "./utils/getAppHeight.utils";
 import { preventResizeAnime } from "./utils/preventResizeAnime.utils";
@@ -15,11 +15,9 @@ const App = () => {
 
   return (
     <div className="app">
+      <Background />
       <Header />
-      <Background>
-        <Main />
-      </Background>
-      <Footer />
+      <Main />
     </div>
   );
 };

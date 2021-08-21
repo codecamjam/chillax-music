@@ -56,21 +56,24 @@
   &--facebook {
   }
   &--instagram {
-    width: 3rem !important;
-    height: 3rem !important;
+    // width: 3rem !important;
+    // height: 3rem !important;
   }
   &--twitter {
   }
 
   &--appleinc {
-    width: 3rem !important;
-    height: 3rem !important;
+    width: 2rem !important;
+
+    // height: 3rem !important;
   }
   &--soundcloud {
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    transform: translateY(-0.5rem);
   }
 
   &--youtube {
-    width: 5rem !important;
-    height: 5rem !important;
+    width: 3rem !important;
   }
 }

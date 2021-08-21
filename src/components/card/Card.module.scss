@@ -2,15 +2,15 @@
 
 .card {
   overflow-x: hidden;
-  margin: 0 0.5rem;
+  margin: 0.3rem 0rem;
   position: relative;
   background-color: var(--text-light);
   border-radius: 0.3rem;
-  padding: 0.5rem 1.5rem 1rem;
+  padding: 0.5rem 1.5rem 0.8rem;
   color: rgba(#fff, 0.7);
   display: flex;
   flex-direction: column;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
 
   @media only screen and (min-width: $bp-md) {
     box-shadow: 1.8rem 1.7rem 1rem rgba(0, 0, 0, 0.4);
@@ -23,8 +23,12 @@
     margin: 1rem 1.5rem;
   }
 
+  @media only screen and (min-width: $bp-xl) {
+    margin: 3rem 1.5rem;
+  }
+
   @media only screen and (min-width: 103.12375em) {
-    margin: 1rem auto;
+    margin: 3rem auto;
     box-shadow: 2.5rem 2.3rem 1rem rgba(0, 0, 0, 0.4);
   }
 
@@ -114,6 +118,7 @@
   transform: translateY(-0.3rem);
   border: 1px solid rgba(#000, 0.8);
   filter: drop-shadow(0.3rem 0.4rem 0.2rem #000);
+  position: relative;
   z-index: 1;
 
   &--guitar {
@@ -164,6 +169,7 @@
 .body {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media only screen and (min-width: $bp-sm) {
     flex-direction: row;
