@@ -1,0 +1,42 @@
+.contact {
+  border: 1px solid white;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+}
+
+.row {
+  display: flex;
+
+  align-items: center;
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+}
+
+.value {
+  text-decoration: none;
+  color: #fff;
+  // transition: all 0.2s ease-in;
+
+  &:focus,
+  &:active,
+  &:hover {
+    //   font-weight: bold;
+    //   color: var(--bs-primary);
+  }
+}
