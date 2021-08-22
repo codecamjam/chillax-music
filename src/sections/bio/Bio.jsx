@@ -22,12 +22,12 @@ export default function Bio() {
             <p className={css.text}>
               <span>
                 Thanks for visiting my site! I'm an audio engineer based in
-                Saint Augustine, FL. I provide <strong>professional</strong>{" "}
-                audio, video, and streaming solutions. I have a Bachelors in
-                Recording Arts from Full Sail University and over 15 years of
-                experience. I've worked in broadcasting as well as in the music
-                industry, so I know what goes into producing{" "}
-                <strong>professional-grade</strong> content.
+                sunny Saint Augustine, FL. I provide{" "}
+                <strong>professional</strong> audio, video, and streaming
+                solutions. I have a Bachelors in Recording Arts from Full Sail
+                University and over 15 years of experience. I've worked in
+                broadcasting and in the music industry, so I know what goes into
+                producing <strong>professional-grade</strong> content.
               </span>
             </p>
             <p className={css.text}>{text2}</p>
