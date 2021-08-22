@@ -1,18 +1,23 @@
 @import "../../scss/abstracts/sass-variables";
 
+.bioWrap {
+  margin-top: 1rem;
+}
+
 .bio {
-  overflow-x: hidden;
-  position: relative;
+  position: relative !important;
   background-color: var(--text-light);
   border-radius: 0.3rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  margin: auto;
+  margin: 1rem auto;
 
   color: rgba(#fff, 0.8);
 
   @media only screen and (min-width: $bp-md) {
+    margin: auto;
+
     box-shadow: 1.8rem 1.7rem 1rem rgba(0, 0, 0, 0.4);
   }
 
@@ -25,28 +30,11 @@
   position: relative;
   width: 15rem;
   margin: 2rem auto;
-  height: 3.5rem;
+  height: 2.5rem;
   display: flex;
 
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-
-  &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 12.7rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-    white-space: nowrap;
-    transform: translate(-49%, -50%);
-  }
 }
 
 .heading {
@@ -80,12 +68,12 @@
   }
 
   @media only screen and (min-width: $bp-md) {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 0 2rem;
   }
 
   @media only screen and (min-width: $bp-lg) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0 2rem;
   }
 

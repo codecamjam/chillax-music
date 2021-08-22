@@ -9,12 +9,9 @@ export default function Bio() {
   return (
     <section className={css.bioWrap}>
       <Container className={`margin-auto  pl-2 pr-2 ${css.bio}`}>
+        <Headshot />
         <Row>
-          <Col
-            xs={12}
-            md={6}
-            className="d-flex justify-content-center justify-content-lg-start"
-          >
+          <Col xs={12} className="d-flex justify-content-center">
             <Contact />
           </Col>
           <Col
@@ -34,26 +31,24 @@ export default function Bio() {
               </span>
             </p>
             <p className={css.text}>{text2}</p>
-            <p className={css.text}>{text3}</p>
-            <p className={css.text}>{text4}</p>
           </Col>
-
-          {/* <Col xs={12} className="d-flex justify-content-center">
-          <h2 className={css.heading}>Chillax! I got you covered!</h2>
-        </Col> */}
+          <Col xs={12} className="d-flex justify-content-center my-3">
+            <EmailBtn />
+          </Col>
         </Row>
-
-        <a
-          href="mailto:chillaxmusicgroup@gmail.com"
-          target="_blank"
-          className="btn btn--hero btn--animated bio-btn"
-        >
-          <div className="bio-btn__content">
-            <span>Book Now!</span>
-            <Icon spriteName="icon-envelop" />
-          </div>
-        </a>
       </Container>
     </section>
   );
 }
+
+const EmailBtn = () => (
+  <a
+    href="mailto:chillaxmusicgroup@gmail.com"
+    target="_blank"
+    className="btn btn--hero btn--animated bio-btn"
+  >
+    <div className={css["bio-btn__content"]}>
+      <span>Book Now!</span>
+    </div>
+  </a>
+);
