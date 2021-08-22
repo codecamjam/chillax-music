@@ -25,7 +25,7 @@ export default function Bio() {
                 sunny Saint Augustine, FL. I provide{" "}
                 <strong>professional</strong> audio, video, and streaming
                 solutions. I have a Bachelors in Recording Arts from Full Sail
-                University and over 15 years of experience. I've worked in
+                University and over 15 years of experience. I've worked in both
                 broadcasting and in the music industry, so I know what goes into
                 producing <strong>professional-grade</strong> content.
               </span>

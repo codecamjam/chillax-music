@@ -4,7 +4,7 @@ I have a Bachelors in Recording Arts from Full Sail University with over 15 year
 experience.  I've worked in the music industry as well as in broadcasting, so
 I know what goes into producing professional-grade content.`;
 
-export const text2 = `Want to promote your company through the airwaves? Maybe you want break into the world of live streaming but you don't know where to start? 
+export const text2 = `Want to promote your company through the airwaves? Maybe you want to break into the world of live streaming but you don't know where to start? 
 Are you hosting an event that needs an audio tech that can pull it off without a hitch? 
 Whether you're a performing artist, a small business, or an inspiring radio personality, I can take you to the next level! Chillax and drop me a line!`;
 
