@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/chillax-music/static/css/main.dac37153.chunk.css",
+    "main.js": "/chillax-music/static/js/main.6c549cea.chunk.js",
+    "main.js.map": "/chillax-music/static/js/main.6c549cea.chunk.js.map",
+    "runtime-main.js": "/chillax-music/static/js/runtime-main.f30d8384.js",
+    "runtime-main.js.map": "/chillax-music/static/js/runtime-main.f30d8384.js.map",
+    "static/js/2.b920381a.chunk.js": "/chillax-music/static/js/2.b920381a.chunk.js",
+    "static/js/2.b920381a.chunk.js.map": "/chillax-music/static/js/2.b920381a.chunk.js.map",
+    "index.html": "/chillax-music/index.html",
+    "static/css/main.dac37153.chunk.css.map": "/chillax-music/static/css/main.dac37153.chunk.css.map",
+    "static/js/2.b920381a.chunk.js.LICENSE.txt": "/chillax-music/static/js/2.b920381a.chunk.js.LICENSE.txt",
+    "static/media/beach.2228cf6c.mp4": "/chillax-music/static/media/beach.2228cf6c.mp4",
+    "static/media/beach.81c558ed.webm": "/chillax-music/static/media/beach.81c558ed.webm",
+    "static/media/Card.module.scss": "/chillax-music/static/media/wideLens.0548ae5b.jpg",
+    "static/media/Headshot.scss": "/chillax-music/static/media/headshot.0ae3e7f5.jpg",
+    "static/media/sprite.368f448b.svg": "/chillax-music/static/media/sprite.368f448b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f30d8384.js",
+    "static/js/2.b920381a.chunk.js",
+    "static/css/main.dac37153.chunk.css",
+    "static/js/main.6c549cea.chunk.js"
+  ]
+}
